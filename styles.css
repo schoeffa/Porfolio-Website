@@ -21,10 +21,10 @@ svg {
 }
 
 .fade {
-    -webkit-animation: fade 3s 150 alternate;
-    -moz-animation: fade 3s 150 alternate;
-    -o-animation: fade 3s 150 alternate;
-    animation: fade 3s 150 alternate;
+    -webkit-animation: fade 3s 10 alternate;
+    -moz-animation: fade 3s 10 alternate;
+    -o-animation: fade 3s 10 alternate;
+    animation: fade 3s 10 alternate;
 }
 
 @supports (-ms-ime-align: auto) {
