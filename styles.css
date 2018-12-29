@@ -27,6 +27,47 @@ svg {
     animation: fade 3s 10 alternate;
 }
 
+#social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.git-bg {
+    position: relative;
+    z-index: -10;
+    border-radius: 50%;
+    top: -118px;
+    left: 1px;
+    height: 115px;
+    width: 118px;
+    background-color: #00CCFF;
+    transition: background-color 1s;
+}
+
+.linkedin-bg {
+    position: relative;
+    z-index: -10;
+    top: -124px;
+    border-radius: 10px;
+    height: 120px;
+    width: 120px;
+    background-color: #00CCFF;
+    transition: background-color 1s;
+
+}
+
+.mark-container {
+    margin: 10px;
+    height: 120px;
+    width: 120px;
+}
+
+.mark-container:hover .git-bg, .mark-container:hover .linkedin-bg {
+    background-color: #FF3333;
+    animation: shimmer 1.5s ease-in-out infinite alternate;
+}
+
 @supports (-ms-ime-align: auto) {
     .fade, .flicker {
         animation: none;
@@ -79,4 +120,10 @@ svg {
     45% {opacity: 0.8;}
     48% {opacity: 0.1;}
     50% {opacity: 0.8;}
+}
+
+@keyframes shimmer {
+    0% {box-shadow:  0px -1px 3px 3px #FF3333;}
+    50% {box-shadow: 0px -1px 5px 5px #FF3333;}
+    100% {box-shadow:  0px -1px 3px 3px #FF3333;}
 }
