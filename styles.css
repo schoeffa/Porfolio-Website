@@ -48,7 +48,8 @@ svg {
 .linkedin-bg {
     position: relative;
     z-index: -10;
-    top: -124px;
+    top: -123px;
+    left: 1px;
     border-radius: 10px;
     height: 120px;
     width: 120px;
