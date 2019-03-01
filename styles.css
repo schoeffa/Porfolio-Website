@@ -37,10 +37,10 @@ svg {
     position: relative;
     z-index: -10;
     border-radius: 50%;
-    top: -118px;
-    left: 1px;
-    height: 115px;
-    width: 118px;
+    top: -63.5px;
+    left: 0px;
+    height: 60px;
+    width: 60px;
     background-color: #00CCFF;
     transition: background-color 1s;
 }
@@ -48,11 +48,11 @@ svg {
 .linkedin-bg {
     position: relative;
     z-index: -10;
-    top: -123px;
-    left: 1px;
-    border-radius: 10px;
-    height: 120px;
-    width: 120px;
+    top: -64px;
+    left: 0px;
+    border-radius: 5px;
+    height: 60px;
+    width: 55px;
     background-color: #00CCFF;
     transition: background-color 1s;
 
@@ -60,8 +60,13 @@ svg {
 
 .mark-container {
     margin: 10px;
-    height: 120px;
-    width: 120px;
+    height: 60px;
+    width: 60px;
+}
+
+.mark-container img {
+    height: 60px;
+    width: 60px;
 }
 
 .mark-container:hover .git-bg, .mark-container:hover .linkedin-bg {
