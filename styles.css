@@ -91,6 +91,27 @@ svg {
     margin: 1em;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.nav-link {
+    color: #1C1C1C;
+    text-decoration: none;
+    background-color: #FF3333;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 15%;
+}
+
+.nav-link:hover {
+    animation: shimmer-blue ease-in-out 1.5s infinite alternate; 
+}
+
 @supports (-ms-ime-align: auto) {
     .fade, .flicker {
         animation: none;
@@ -153,4 +174,67 @@ svg {
     0% {box-shadow:  0px -1px 3px 3px #FF3333;}
     50% {box-shadow: 0px -1px 5px 5px #FF3333;}
     100% {box-shadow:  0px -1px 3px 3px #FF3333;}
+}
+
+@keyframes shimmer-blue {
+    0% {box-shadow:  0px -1px 3px 3px #00CCFF;}
+    50% {box-shadow: 0px -1px 5px 5px #00CCFF;}
+    100% {box-shadow:  0px -1px 3px 3px #00CCFF;}
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        height: 100vh;
+    }
+
+    .logo-container {
+        transform: scale(.8);
+        top: -30px;
+    }
+
+    .mark-container, .mark-container img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .linkedin-bg {
+        height: 119px;
+        width: 109px;
+        top: -123px;
+    }
+
+    .git-bg {
+        height: 119px;
+        width: 120px;
+        top: -121px;
+    }
+
+    #langs {
+        font-size: 2em;
+    }
+    
+    nav {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0px;
+        top: -80px;
+    }
+
+    #social-links {
+        margin-top: 0px;
+    }
+
+    .nav-link {
+        width: 20%;
+        text-align: center;
+        font-size: 2em;
+        height: 110%;
+    }
+
+    #social-links {
+        position: relative;
+        top: -60px;
+    }
+
 }
