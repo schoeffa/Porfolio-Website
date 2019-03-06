@@ -4,7 +4,14 @@ body {
     margin-bottom:10px;
 }
 
-footer {
+about {
+    font-family: 'Raleway';
+    color: #FF3333;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.app-footer {
     width: 98vw;
 }
 
@@ -131,6 +138,10 @@ nav, nav button {
     align-items: center;
 }
 
+.nav-link:focus {
+    outline: none;
+}
+
 @supports (-ms-ime-align: auto) {
     .fade, .flicker {
         animation: none;
@@ -246,5 +257,9 @@ nav, nav button {
 
     .logo-container {
         width: 80vw;
+    }
+
+    about {
+        font-size: 2em;
     }
 }
