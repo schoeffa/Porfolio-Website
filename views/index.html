@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Aaron Schoeff</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <ng-view></ng-view>
+            
+        <footer>
+            <nav>
+                <button href="" class="nav-link">About Me</button>
+                <button href="" class="nav-link">Projects</button>
+                <button href="" class="nav-link">Contact</button>
+            </nav>
+            <section id="social-links">
+                <div class="mark-container">
+                    <a href="https://github.com/schoeffa" target="_blank"><img src="../Images/GitHub-Mark-Light-120px-plus.png"></a>
+                    <div class="git-bg"></div>
+                </div>
+                <div class="mark-container">
+                    <a href="https://www.linkedin.com/in/aschoeff/" target="_blank"><img src="../Images/In-White-121px-TM.png"></a>
+                    <div class="linkedin-bg"></div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    
+    <script src="https://code.angularjs.org/1.6.5/angular.js"></script>
+    <script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
+    <script src="../app/module.js"></script>
+    <script src="../app/controllers/home.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
