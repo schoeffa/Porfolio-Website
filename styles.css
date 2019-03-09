@@ -13,6 +13,17 @@ about {
 
 .app-footer {
     width: 98vw;
+    position: absolute;
+    bottom: 0;
+}
+
+ng-view {
+    padding-bottom: 250px;
+}
+
+.logo-head {
+    max-width: 98vw;
+    margin-top: 0px;
 }
 
 .logo-container {
@@ -24,6 +35,11 @@ about {
 
 svg {
     margin: 10px;
+    transform: scale(1.25);
+}
+
+.logo-head svg {
+    transform: scale(1);
 }
 
 .flicker {
@@ -102,8 +118,16 @@ svg {
     opacity: 0;
 }
 
+#h-langs {
+    font-size: .9em;
+}
+
 #langs span {
-    margin: 1em;
+    margin: .5em;
+}
+
+#h-langs span {
+    margin: .25em;
 }
 
 nav, nav button {
@@ -111,9 +135,15 @@ nav, nav button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 0px 20px;
     font-family: Raleway, sans-serif;
     border: none;
+}
+
+.bio {
+    font-size: .75em;
+    margin-bottom: 0px;
+    padding: 1em;
 }
 
 .nav-link {
@@ -140,6 +170,10 @@ nav, nav button {
 
 .nav-link:focus {
     outline: none;
+}
+
+#social-links {
+    margin-top: 0px;
 }
 
 @supports (-ms-ime-align: auto) {
@@ -237,6 +271,10 @@ nav, nav button {
     #langs {
         font-size: 2em;
     }
+
+    #langs span {
+        margin: 1em;
+    }
     
     nav {
         flex-direction: row;
@@ -245,7 +283,7 @@ nav, nav button {
     }
 
     #social-links {
-        margin-top: 0px;
+        margin-top: 2em;
     }
 
     .nav-link {
@@ -257,6 +295,35 @@ nav, nav button {
 
     .logo-container {
         width: 80vw;
+    }
+
+    .logo-container svg {
+        transform: scale(.8);
+    }
+
+    .logo-head svg {
+        transform: scale(0.5);
+        position: absolute;
+        left: -20%;
+        top: -15%;
+    }
+
+    #h-langs {
+        margin-bottom: 0px;
+        position: relative;
+        left: 60%;
+    }
+
+    .logo-head {
+        min-height: 250px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bio {
+        margin-top: 0px;
+        position: relative;
+        top: -2em;
     }
 
     about {
