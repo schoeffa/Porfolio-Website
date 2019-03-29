@@ -14,7 +14,7 @@ about {
 .app-footer {
     width: 98vw;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
 }
 
 ng-view {
@@ -161,7 +161,7 @@ nav, nav button {
 }
 
 .wrapper {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,20 +252,20 @@ nav, nav button {
     }
 
     .mark-container, .mark-container img {
-        height: 120px;
-        width: 120px;
+        height: 60px;
+        width: 60px;
     }
 
     .linkedin-bg {
-        height: 119px;
-        width: 109px;
-        top: -123px;
+        height: 60px;
+        width: 55px;
+        top: -63px;
     }
 
     .git-bg {
-        height: 119px;
-        width: 120px;
-        top: -121px;
+        height: 60px;
+        width: 60px;
+        top: -63px;
     }
 
     #langs {
@@ -278,19 +278,19 @@ nav, nav button {
     
     nav {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         margin: 0px;
     }
 
     #social-links {
-        margin-top: 2em;
+        margin-top: .25em;
     }
 
     .nav-link {
-        width: 20%;
+        width: 10%;
         text-align: center;
-        font-size: 2em;
-        height: 110%;
+        font-size: 1.2em;
+        height: 70%;
     }
 
     .logo-container {
@@ -302,10 +302,10 @@ nav, nav button {
     }
 
     .logo-head svg {
-        transform: scale(0.5);
+        transform: scale(0.25);
         position: absolute;
-        left: -20%;
-        top: -15%;
+        left: -35%;
+        top: -20%;
     }
 
     #h-langs {
@@ -321,12 +321,29 @@ nav, nav button {
     }
 
     .bio {
-        margin-top: 0px;
+        margin: 0px 20px;
         position: relative;
-        top: -2em;
+        top: 2em;
     }
 
     about {
         font-size: 2em;
+    }
+
+    app-footer {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .project {
+        border: none;
+        width: 1600px;
+        height: 800px;
+        transform: scale(.5);
+        position: fixed;
+        left: 0px;
+        top: 0px;
     }
 }

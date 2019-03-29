@@ -6,6 +6,9 @@ function PortfolioService($location) {
     self.loadAbout = () => {
         $location.path('/about');
     }
+    self.loadProjects = () => {
+        $location.path('/projects');
+    }
 }
 
 angular.module("App").service("PortfolioService", PortfolioService);

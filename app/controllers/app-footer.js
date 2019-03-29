@@ -7,6 +7,9 @@ const appFooter = {
         this.loadAbout = () => {
             PortfolioService.loadAbout();
         }
+        this.loadProjects = () => {
+            PortfolioService.loadProjects();
+        }
     }]
 }
 
